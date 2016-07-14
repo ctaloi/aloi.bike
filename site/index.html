@@ -14,12 +14,31 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<meta property="og:url"                content="http://aloi.bike" />
-		<meta property="og:type"               content="website" />
-		<meta property="og:title"              content="Riding for our children" />
-		<meta property="og:description"        content="On September 16th we ride 100 miles to support the National Foundation of Missing and Exploited Children. We tour local schools, educate our community and raise raise awareness for our cause." />
-		<meta property="og:image"             content="http://aloi.bike/images/bg02.jpg" />
+		<meta property="og:site_name"          content="aloi.bike" />
+		<meta property="og:type"               content="article" />
+		<meta property="og:title"              content="Supporting the Children" />
+		<meta property="og:description"        content="On September 16th Chris Aloi will ride 100 miles to support the National Foundation of Missing and Exploited Children.  He will tour local schools, educate our community and raise raise awareness for the cause.  Your donation will help motivate Chris and the support the foundation." />
+		<meta property="og:image"              content="http://aloi.bike/images/bg06.jpg" />
+		<meta property="fb:app_id"             content="638485272976927" />
 	</head>
 	<body>
+		<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '638485272976927',
+      xfbml      : true,
+      version    : 'v2.7'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 
 		<!-- Header -->
 			<header id="header">
@@ -29,16 +48,25 @@
 		<!-- Footer -->
 			<footer id="footer">
 				<ul class="icons">
-					<li><a href="http://twitter.com/ctaloi" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="http://facebook.com/chris-aloi" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<div
+						class="fb-like"
+						data-share="true"
+						data-width="450"
+						data-colorscheme="dark"
+						data-layout="button_count"
+						data-size="large"
+						data-show-faces="true">
+					</div>
 				</ul>
 
 				<p>
-					On September 16th we ride 100 miles to support the <a href="http://www.therideformissingchildren.com/">National Foundation of Missing and Exploited Children.</a>
+					On September 16th we ride 100 miles to support the <a href="http://www.therideformissingchildren.com/" target="_blank">National Foundation of Missing and Exploited Children.</a>
+					<br />
 					We tour local schools, educate our community and raise raise awareness for our cause.
 					<br />
+					Your <a href="https://fundraising.active.com/fundraiser/aloi2016" target="_blank">donation</a> will motivate Chris and the support the foundation.
 					<br />
-					<strong>Thank you for your support.</strong>
+					<strong><i class="fa fa-heart" ></i> Thank you for your support.</strong>
 				</p>
 
 			</footer>
